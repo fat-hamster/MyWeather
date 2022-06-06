@@ -2,6 +2,7 @@
     <string name="app_name">MyWeatherApp</string>
     <string name="temperature_label">Температура</string>
     <string name="feels_like_label">Ощущается как</string>
+    <string name="condition_label">На улице:</string>
     <string name="city_coordinates">lt/ln: 55.755826, 37.617299900000035</string>
     <string name="fab_icon_description">FAB icon</string>
     <string name="error">Error</string>

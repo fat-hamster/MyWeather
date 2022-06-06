@@ -3,7 +3,9 @@ package com.dmgpersonal.myweatherapp.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dmgpersonal.myweatherapp.R
+
 import com.dmgpersonal.myweatherapp.databinding.MainActivityBinding
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,7 +14,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = MainActivityBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val view = binding.root
+        setContentView(view)
+
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.container, MainFragment.newInstance())

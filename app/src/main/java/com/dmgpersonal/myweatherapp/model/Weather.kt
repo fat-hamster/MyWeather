@@ -2,6 +2,7 @@ package com.dmgpersonal.myweatherapp.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
+import kotlin.collections.List
 
 @Parcelize
 data class Weather(
@@ -10,7 +11,7 @@ data class Weather(
     val feelsLike: Int = 0
 ) : Parcelable
 
-fun getDefaultCity(): City = City("Москва", 55.755826, 37.617299900000035)
+fun getDefaultCity() = City("Москва", 55.755826, 37.617299900000035)
 
 fun getWorldCities(): List<Weather> = listOf(
         Weather(City("Лондон", 51.5085300, -0.1257400), 1, 2),

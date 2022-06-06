@@ -1,5 +1,7 @@
 package com.dmgpersonal.myweatherapp.model
 
+import kotlin.collections.List
+
 interface Repository {
     fun getWeatherFromLocalStorageRus() : List<Weather>
     fun getWeatherFromLocalStorageWorld() : List<Weather>
